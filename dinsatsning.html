@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Dinsatsning – satsa på dig själv, få pengarna tillbaka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --accent: #ff4d00;
+      --dark: #1a1a1a;
+      --light: #fafafa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+    body { background: var(--light); color: var(--dark); line-height: 1.6; }
+    header { background: var(--dark); color: #fff; padding: 3rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; letter-spacing: -1px; }
+    header p { font-size: 1.2rem; opacity: .9; margin-top: .5rem; }
+    .container { max-width: 880px; margin: auto; padding: 2rem 1rem; }
+    .steps { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 3rem 0; }
+    .step { background: #fff; padding: 1.8rem 1.5rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+    .step h3 { color: var(--accent); margin-bottom: .6rem; }
+    .cta-box { background: var(--accent); color: #fff; padding: 2.5rem 2rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
+    .cta-box h2 { margin-bottom: 1rem; font-size: 1.8rem; }
+    button {
+      background: #fff; color: var(--dark); border: none; padding: 1rem 2.2rem;
+      font-size: 1.15rem; font-weight: 700; border-radius: 8px; cursor: pointer; transition: transform .2s;
+    }
+    button:hover { transform: scale(1.05); }
+    footer { text-align: center; padding: 2.5rem 1rem; font-size: .8rem; opacity: .65; }
+    @media(max-width:600px){ header h1{font-size:2rem;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dinsatsning</h1>
+    <p>Sätt mål. Satsa pengar. Klarar du målet får du tillbaka allt. Misslyckas du går summan till välgörenhet.</p>
+  </header>
+
+  <div class="container">
+    <section class="steps">
+      <div class="step">
+        <h3>1. Skapa mål</h3>
+        <p>T.ex. ”gå 10 000 steg om dagen i 30 dagar” eller ”spring ett halvmarathon inom 60 dagar”.</p>
+      </div>
+      <div class="step">
+        <h3>2. Välj summa</h3>
+        <p>Satsa 200–5 000 kr. Pengarna reserveras på ditt kort – ingen utgift om du klarar målet.</p>
+      </div>
+      <div class="step">
+        <h3>3. Bevisa resultat</h3>
+        <p>Ladda upp bilder, skärmdumpar eller connecta din klocka. En vän eller vi godkänner.</p>
+      </div>
+      <div class="step">
+        <h3>4. Få pengarna tillbaka</h3>
+        <p>Godkänt = reservationen släpps. Du betalar 0 kr. Inte godkänt = summan går till valfri välgörenhet.</p>
+      </div>
+    </section>
+
+    <div class="cta-box">
+      <h2>Starta din första satsning – det tar 2 minuter</h2>
+      <!-- Ersätt med din Stripe Payment Link eller mailformulär -->
+      <form action="https://buy.stripe.com/test_REPLACE" method="GET">
+        <button type="submit">Kom igång gratis</button>
+      </form>
+    </div>
+
+    <section>
+      <h2>Vanliga frågor</h2>
+      <p><strong>Är det gambling?</strong><br>Nej. Du bestämmer fullt ut resultatet – det är ett bindande målkontrakt.</p>
+      <p><strong>Vad händer med pengarna?</strong><br>De reserveras av Stripe. Klarar du målet släpps de helt. Annars skickas de (minus 15 % i plattformsavgift) till exempelvis Rädda Barnen eller Cancerfonden.</p>
+      <p><strong>Vem godkänner mitt bevis?</strong><br>Du väljer en pålitlig vän eller använder vår kommande AI-granskning.</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Dinsatsning – kontakt: hello@dinsatsning.se
+  </footer>
+</body>
+</html>
